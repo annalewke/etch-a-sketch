@@ -76,7 +76,9 @@ btnErase.addEventListener("click", () => color = "erase");
 btnClear.addEventListener("click", clearGrid)
 btnBlack.addEventListener("click", () => color = "")
 
-
+const allButtons = Array.from(document.querySelectorAll("button"));
+allButtons.forEach(button => button.addEventListener("mouseover", () => button.style.backgroundColor = "grey"))
+allButtons.forEach(button => button.addEventListener("mouseout", () => button.style.backgroundColor = ""))
 
 
 
