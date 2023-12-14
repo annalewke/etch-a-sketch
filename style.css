@@ -11,10 +11,37 @@
     flex-wrap: wrap;
 }
 
+.left-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    align-items: end;
+}
+
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-bar button {
+    border-style: none;
+    padding: 20px 10px;
+}
+
+.right-bar button {
+    border-style: none;
+    padding: 20px 10px;
+}
+
+button {
+    width: fit-content;
+}
+
 .children {
     background-color: rgb(244, 241, 238);
 }
-
 
 
 h1 {
