@@ -19,15 +19,15 @@ function createGrid (userInput) {
     })
 }
 
-function boxSize () {
-    let boxes = container.querySelectorAll("div");
-    boxes.forEach(box => box.remove());
+function pixelSize () {
+    let pixels = container.querySelectorAll("div");
+    pixels.forEach(pixel => pixel.remove());
     createGrid(window.prompt("give me a number between 1 - 50"));
 }
 
 createGrid(10);
 
-button.addEventListener("click", boxSize);
+button.addEventListener("click", pixelSize);
 
 
 
